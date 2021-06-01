@@ -28,4 +28,23 @@
     @include cleanExtras();
     margin: 7px 0px !important;
   }
+
+  .sidebarLanguageContainer{
+    @include flexCenter(row);
+    height: 50px;
+    padding: 0 20px;
+    button{
+      //flex:1;
+      text-align: center;
+      background-color: transparent;
+      border: 0;
+      color: #000000;
+      &:hover{
+        cursor: pointer;
+      }
+    }
+    .active{
+      color: $primary !important;
+    }
+  }
 }
