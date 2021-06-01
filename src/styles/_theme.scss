@@ -1,14 +1,19 @@
 //Constants
-$primary: red;
+$primary: #ffffff;
 $secondary: red;
 $font: pink;
 $heading: purple;
 $light_bg: transparent;
 
 //Mixins
-@mixin flexCenter($direction: 'column') {
+@mixin flexCenter($direction: column) {
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-content: center !important;
   flex-direction: $direction;
+}
+
+@mixin cleanExtras() {
+  margin: 0 !important;
+  padding: 0 !important;
 }

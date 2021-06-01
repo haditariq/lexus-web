@@ -1,4 +1,4 @@
-import './_app.scss';
+import './styles/_app.scss';
 import Slider from "./components/common/slider";
 import Sidebar from "./components/common/sidebar";
 

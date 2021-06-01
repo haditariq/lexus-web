@@ -1,8 +1,31 @@
-@import "theme";
+@import "_theme";
 
 .sideBarContainer {
+  @include flexCenter();
   background-color: rgba(255, 255, 255, 0.5);
-  padding: 15px;
-  height: 100vh !important;
-  width:5% !important ;
+  padding: 15px 0;
+  width: 10% !important;
+  min-width: 100px;
+  color: $primary;
+
+  div {
+    @include flexCenter();
+    text-align: center;
+  }
+
+  .fontStyle {
+    font-size: 20px
+  }
+
+  .sidebarItem{
+    @include flexCenter();
+    margin: 2px;
+    align-items: center;
+    padding: 15px 0px;
+  }
+
+  h6{
+    @include cleanExtras();
+    margin: 7px 0px !important;
+  }
 }
