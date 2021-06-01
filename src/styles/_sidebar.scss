@@ -22,6 +22,10 @@
     margin: 2px;
     align-items: center;
     padding: 15px 0px;
+
+    &:hover{
+      cursor: pointer;
+    }
   }
 
   h6{
@@ -33,6 +37,7 @@
     @include flexCenter(row);
     height: 50px;
     padding: 0 20px;
+
     button{
       //flex:1;
       text-align: center;
@@ -42,9 +47,17 @@
       &:hover{
         cursor: pointer;
       }
+      opacity: 1;
     }
-    .active{
+    .active *{
       color: $primary !important;
+      opacity: .9 !important;
+      box-shadow: 0px 2px 5px black;
+    }
+    .flag{
+      height: 20px;
+      width: 30px;
+      border-radius: 2px;
     }
   }
 }

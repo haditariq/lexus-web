@@ -42,12 +42,20 @@ const Sidebar = () => {
         <button
           className={USLanguageClass}
           onClick={() => setActiveLanguage("US")}>
-          US
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Flag_of_the_United_Kingdom.svg/640px-Flag_of_the_United_Kingdom.svg.png"
+            alt=""
+            className={"flag"}
+          />
         </button>
         <button
           className={ARLanguageClass}
           onClick={() => setActiveLanguage("AR")}>
-          AR
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Flag_of_the_United_Arab_Emirates.svg/1280px-Flag_of_the_United_Arab_Emirates.svg.png"
+            alt=""
+            className={"flag"}
+          />
         </button>
       </div>
     </div>
