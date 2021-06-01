@@ -1,0 +1,21 @@
+@import "styles/_theme";
+@import "./styles/_slider";
+@import "styles/sidebar";
+
+.app {
+  @include flexCenter('row');
+  height: 100vh !important;
+
+  .container {
+    display: flex;
+    flex: 1;
+    width: 100%;
+  }
+
+  .rightContentContainer {
+    display: flex;
+    flex: 1;
+    background-color: pink;
+  }
+}
+

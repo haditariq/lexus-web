@@ -1,0 +1,12 @@
+.sliderBGContainer{
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  .content{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    width: 100%;
+  }
+}
