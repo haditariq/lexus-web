@@ -1,6 +1,7 @@
 @import "theme";
 @import "slider";
 @import "sidebar";
+@import "cartypeitem";
 
 .app {
   @include flexCenter('row');

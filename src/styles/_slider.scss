@@ -1,8 +1,11 @@
 .sliderBGContainer{
   display: flex;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 50%;
   .content{
     background-color: rgba(0,0,0,.5);
     position: absolute;

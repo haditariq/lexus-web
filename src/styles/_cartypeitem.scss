@@ -1,0 +1,19 @@
+@import "theme";
+
+.carTypeItemContainer {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  border-right: .5px solid $primary;
+  padding-bottom: 50px;
+  color: $primary;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:focus {
+    background-color: rgba(255,255,255,.5);
+  }
+}
