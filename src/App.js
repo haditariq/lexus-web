@@ -23,7 +23,7 @@ const carTypeData = [
   },
   {
     uri: "https://toyota.scene7.com/is/image/toyota/Hero-Lexus-FCV-LF30-2048x2048?wid=2048&hei=2048",
-    name: "PERFORMANCE"
+    name: "FUTURE"
   },
 ];
 
