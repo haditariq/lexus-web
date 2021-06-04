@@ -26,7 +26,7 @@ const listItems = [
   // },
 ];
 
-const Sidebar = () => {
+const Sidebar = (props) => {
   const [activeLanguage, setActiveLanguage] = useState("US");
   let USLanguageClass = activeLanguage === "US" ? "active" : "";
   let ARLanguageClass = activeLanguage === "AR" ? "active" : "";
@@ -37,6 +37,7 @@ const Sidebar = () => {
         key={idx}
         icon={item.iconName()}
         title={item.title}
+        onClick={props.onPress}
       />)}
       <div className={"sidebarLanguageContainer"}>
         <button

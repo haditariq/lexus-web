@@ -3,6 +3,7 @@ import Slider from "./components/common/slider";
 import Sidebar from "./components/common/sidebar";
 import CarTypeItem from "./components/carTypeItem";
 import {useState} from "react";
+import OverlayMenuItem from "./components/common/OverlayMenuItem";
 
 const carTypeData = [
   {
@@ -29,20 +30,37 @@ const carTypeData = [
 
 function App(){
   const [activeItem, setActiveItem] = useState(carTypeData[0]);
+  const [menuItem, setMenuItem] = useState('');
+  const [hideModal, setHideModal] = useState(true);
+  
+  const onClickMenuItem = (item) => {
+    setMenuItem(item);
+    setHideModal(false)
+  }
+  
   return (
     <div className={"app"}>
       <Slider uri={activeItem.uri}>
         <div className={"container"}>
-          <Sidebar/>
+          <Sidebar onPress={(e) => onClickMenuItem(e)}/>
           <div className={"rightContentContainer"}>
             {carTypeData.map((item, idx) =>
               <CarTypeItem
                 item={item}
-                onTypeClick={(item)=> setActiveItem(item)}
+                onTypeClick={(item) => setActiveItem(item)}
               />
             )}
           </div>
         </div>
+        
+        {!hideModal &&
+        <div className={"overlayMainContainer"}>
+          <OverlayMenuItem
+            onClose={()=>setHideModal(true)}
+            menuItemSelected={menuItem}
+          />
+        </div>
+        }
       </Slider>
     </div>
   );
