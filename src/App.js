@@ -31,7 +31,7 @@ const carTypeData = [
 function App(){
   const [activeItem, setActiveItem] = useState(carTypeData[0]);
   const [menuItem, setMenuItem] = useState('');
-  const [hideModal, setHideModal] = useState(true);
+  const [hideModal, setHideModal] = useState(false);
   
   const onClickMenuItem = (item) => {
     setMenuItem(item);
@@ -41,7 +41,7 @@ function App(){
   return (
     <div className={"app"}>
       <Slider uri={activeItem.uri}>
-        <div className={"container"}>
+        <div className={"contentContainer"}>
           <Sidebar onPress={(e) => onClickMenuItem(e)}/>
           <div className={"rightContentContainer"}>
             {carTypeData.map((item, idx) =>

@@ -1,0 +1,8 @@
+.findDealersContainer{
+  display: flex;
+  flex: 1;
+
+  .findDealersContainer{
+    flex: 1 !important;
+  }
+}

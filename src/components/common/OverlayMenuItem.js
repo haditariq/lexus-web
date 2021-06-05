@@ -1,5 +1,6 @@
 import React from 'react';
 import {MdCancel} from "react-icons/md";
+import FindDealers from "../../screens/FindDealers";
 
 const OverlayMenuItem = (props) => {
   return (
@@ -11,9 +12,7 @@ const OverlayMenuItem = (props) => {
         <MdCancel/>
       </div>
   
-      {props.menuItemSelected.length > 0 &&
-      <h1>{props.menuItemSelected}</h1>
-      }
+      <FindDealers/>
     </div>
   );
 };

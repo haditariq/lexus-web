@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 
 import SidebarItem from "../sidebarItem";
 import {FaSearch, FaCarAlt, FaTools, FaPhoneAlt, FaSignLanguage} from "react-icons/fa";
+import { AiFillContacts } from "react-icons/ai";
 
 const listItems = [
   {
@@ -17,8 +18,8 @@ const listItems = [
     title: "Tuning",
   },
   {
-    iconName: () => <FaPhoneAlt className={"fontStyle"}/>,
-    title: "Contact Us",
+    iconName: () => <AiFillContacts className={"fontStyle"}/>,
+    title: "Find A Dealer",
   },
   // {
   //   iconName: () => <FaSignLanguage className={"fontStyle"} />,
