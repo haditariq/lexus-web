@@ -1,0 +1,19 @@
+.groupContainer{
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px 15px;
+
+  button{
+    background-color: transparent;
+    border: 0;
+    padding: 0 10px;
+  }
+
+  .buttonActive{
+    border-bottom: 1px solid #fff;
+    color: #fff;
+  }
+
+}
