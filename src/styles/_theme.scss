@@ -17,3 +17,9 @@ $light_bg: transparent;
   margin: 0 !important;
   padding: 0 !important;
 }
+
+@mixin displayFlexWithDirection($direction: column) {
+  display: flex;
+  flex: 1;
+  flex-direction: direction;
+}

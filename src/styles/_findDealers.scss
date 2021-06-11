@@ -1,8 +1,9 @@
-.findDealersContainer{
+.findDealersContainer {
   display: flex;
   flex: 1;
 
-  .findDealersContainerRow{
-    flex: 1 !important;
+  .sectionColumn {
+    display: flex;
+    flex: 1;
   }
 }

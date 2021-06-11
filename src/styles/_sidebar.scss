@@ -14,47 +14,46 @@
   }
 
   .fontStyle {
-    font-size: 20px
+    font-size: 20px;
   }
 
-  .sidebarItem{
-    @include flexCenter();
+  .sidebarItem {
     margin: 2px;
     align-items: center;
     padding: 15px 0px;
 
-    &:hover{
+    &:hover {
       cursor: pointer;
     }
   }
 
-  h6{
+  h6 {
     @include cleanExtras();
     margin: 7px 0px !important;
   }
 
-  .sidebarLanguageContainer{
+  .sidebarLanguageContainer {
     @include flexCenter(row);
     height: 50px;
     padding: 0 20px;
 
-    button{
+    button {
       //flex:1;
       text-align: center;
       background-color: transparent;
       border: 0;
       color: #000000;
-      &:hover{
+      &:hover {
         cursor: pointer;
       }
       opacity: 1;
     }
-    .active *{
+    .active * {
       color: $primary !important;
-      opacity: .9 !important;
+      opacity: 0.9 !important;
       box-shadow: 0px 2px 5px black;
     }
-    .flag{
+    .flag {
       height: 20px;
       width: 30px;
       border-radius: 2px;
